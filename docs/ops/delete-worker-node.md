@@ -76,6 +76,7 @@ Chassis "6a29de7e-d731-4eaf-bacd-2f239ee52b28"
 ## 若节点对应的 chassis 依然存在，手动进行删除
 
 uuid 为之前命令所查出的 Chassis 对应 id：
+注意：若手动删除后再次查询对应节点的chassis仍存在，请先检查下线节点的ovn进程是否仍在运行，导致删除后该节点又重新上传了信息。
 
 ```bash
 # kubectl ko sbctl chassis-del b0564934-5a0d-4804-a4c0-476c93596a17
